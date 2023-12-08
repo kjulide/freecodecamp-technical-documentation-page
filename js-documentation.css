@@ -3,12 +3,13 @@ body {
   font-family: 'Open Sans', Arial, sans-serif;
   box-sizing: border-box;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 header {
   color: black;
   margin: 10px;
-  font-size: 30px;
+  font-size: 1.8rem;
   text-align: center;
 }
 
@@ -17,8 +18,8 @@ main header {
   margin: 0px;
 }
 
-p, li, code {
-  font-size: 15px;
+p, main li, code {
+  font-size: 0.96em;
   margin: 15px;
   color: #4d4e53;
 }
@@ -30,7 +31,7 @@ code {
   background-color: #f7f7f7;
   padding: 15px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 0.96rem;
 }
 
 nav {
@@ -65,7 +66,7 @@ main {
 }
 
 .main-section {
-  width: 865px;
+  width: 70vw;
 }
 
 a {
@@ -77,4 +78,29 @@ a:hover {
   color:#4d4e53; 
   text-decoration:none; 
   cursor:pointer;  
+}
+
+@media (max-width: 912px) {
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
 }
